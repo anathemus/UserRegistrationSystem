@@ -6,11 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import com.fdmgroup.userregistrationsystem.User;
+import com.fdmgroup.userregistrationsystem.user.User;
 
 public class ReadCommand implements FileReadCommand {
 
-	public File file = new File("src/main/resources/UserDirectory.txt");
+	public File file = new File("src" + File.separator + "main"
+			  + File.separator + "resources" + File.separator + 
+			  "UserDirectory.txt");
 	
 	public ReadCommand() {
 		// TODO Auto-generated constructor stub
@@ -43,6 +45,7 @@ public class ReadCommand implements FileReadCommand {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 		return returnUser;
 	}
 

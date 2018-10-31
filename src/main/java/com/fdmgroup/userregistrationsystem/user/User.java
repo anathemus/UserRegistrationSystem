@@ -1,4 +1,4 @@
-package com.fdmgroup.userregistrationsystem;
+package com.fdmgroup.userregistrationsystem.user;
 
 public class User {
 	private String username;

@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.fdmgroup.userregistrationsystem.User;
+import com.fdmgroup.userregistrationsystem.user.User;
 import com.fdmgroup.userregistrationsystem.read.ReadCommand;
 import com.fdmgroup.userregistrationsystem.write.WriteCommand;
 

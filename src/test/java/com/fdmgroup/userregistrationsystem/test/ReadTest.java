@@ -8,7 +8,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import com.fdmgroup.userregistrationsystem.User;
+import com.fdmgroup.userregistrationsystem.user.User;
 import com.fdmgroup.userregistrationsystem.read.ReadCommand;
 
 public class ReadTest {
