@@ -8,6 +8,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import org.mockito.*;
+
 import com.fdmgroup.userregistrationsystem.controller.RegistrationController;
 import com.fdmgroup.userregistrationsystem.user.User;
 
@@ -49,7 +51,10 @@ public class RegistrationControllerTest {
 	
 	@Test
 	public void testRegisterNewUser() {
-		fail("Not yet implemented");
+		// RegistrationController testController = Mockito.mock(RegistrationController.class);
+		controller.registerNewUser("benjamin.burgess", "12345", "Trainee");
+		assertEquals(controller.read.readUser("benjamin.burgess").getRole(), "Trainee");
+			
 	}
 
 }
